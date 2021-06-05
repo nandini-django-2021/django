@@ -1,0 +1,74 @@
+1.#Find out: length of string, convert this to list using split operation.
+str="Hey iam from New Delhi"
+print(len(str))
+str.split()
+
+2.#Given string s = "name is rahul". Write code to give following o/p.
+# - "Name is rahul"
+# -  "Rame Is Rahul"
+# -  "NAME IS RAHUL"
+s = "name is rahul"
+print(s.capitalize())
+str = s.replace("name", "rame")
+print(str.title())
+print(s.upper())
+
+3.#Using length and breadth as input find out area and perimeter of a given rectangle.
+length = int(input("Length: "))
+breadth = int(input("Breadth: "))
+area = length * breadth
+perimeter = 2 * (length + breadth)
+print(area)
+print(perimeter)
+
+4.#Using diameter as input find out circumference and area of a circle.
+diameter = int(input("Diameter: "))
+radius = diameter/2
+print("radius: ", radius)
+circumference = 22/7 *2*radius
+area = (22/7 * radius*radius)
+print(circumference)
+print(area)
+
+5.#Write a program to compute roots of a quadratic equation when coefficients a, b and c are known(entered by user).
+import math
+a = float(input("Value of Cofficient a: "))
+b = float(input("Value of Cofficient b: "))
+c = float(input("Value of Cofficient c: "))
+d = (b * b) - (4 * a * c)
+r1 = (-b-cmath.sqrt(d))/(2*a)
+r2 = (-b+cmath.sqrt(d))/(2*a)
+print("root1:",r1)
+print("root2:",r2)
+
+6.# Find volume of a sphere using radius as input.
+radius = float(input("Enter radius: "))
+volume = 4 * ((22/7 * (radius * radius * radius))) / 3
+print(volume)
+
+7.#Count the  number of digits in a number. Example: 3454 has 4 digits.
+number=int(input("enter number: "))
+count=0
+while number!=0:
+    number=number//10
+    count+=1
+print(count)
+
+8.#Write a program that accepts a string and gives output string with all capital letters.
+s = input()
+print(s.upper())
+
+9.#Write a program to that accepts a string s, an index number n and a character ‘c’. And outputs the string replaced with the character at the index number n. 
+ #Example- ‘hello’ , 0 , ‘j’ ==> ‘jello’.
+ #(Hint2: You can try it by join function too by typecasting it to list)
+s = input("Enter s:")
+n = int(input("Enter n:"))
+c = input("Enter c:")       
+string=list(s)
+string[n]=c
+"".join(string)
+print(str);
+
+10.#Reverse a string. Example: 'Hey there' = 'ereht yeH'
+str = input("Enter the string: ")
+print(str[::-1])
