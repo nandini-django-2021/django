@@ -4,6 +4,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Info(models.Model):
 
-    name=models.CharField(max_length=400)
-    contact=models.CharField(max_length=400)
-    interests=models.CharField(max_length=400)
+    name=models.CharField(max_length=50
+    contact=models.CharField(max_length=40)
+    interests=models.CharField(max_length=30)
